@@ -1,5 +1,6 @@
 import Card from '@/components/card'
 import Dropdown from '@/components/dropdown'
+import Illustrated from '@/components/illustrated'
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <hr />
       <Dropdown />
       <hr />
-      {/* <Example/> */}
+      <Illustrated/>
     </main>
   )
 }
