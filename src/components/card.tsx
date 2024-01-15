@@ -50,7 +50,7 @@ const Card = () => {
                     <div className='text-lg font-bold leading-6 tracking-wide rounded-md flex items-center justify-center h-11 w-[81px] text-white bg-[#40BB15]'>$13.33</div>
                     <p className='text-sm font-semibold leading-6 tracking-wide text-[#737373]'>Starting cost</p>
                 </div>
-                <div className='flex justify-center rounded-md bg-[#23A6F0]'>
+                <div className='flex justify-center rounded-sm h-10 items-center bg-[#23A6F0]'>
                     <p className='text-base font-semibold leading-6 text-white sm:hidden'>Select option</p>
                     <p className='text-base font-semibold leading-6 text-white hidden sm:block'>View profile</p>
                 </div>
