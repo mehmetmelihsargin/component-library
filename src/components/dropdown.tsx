@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Select from 'react-select';
+import Placeholder from 'react-select/dist/declarations/src/components/Placeholder';
 // const [selectedOption, setSelectedOption] = useState<any>();
 const options = [
     { value: '4:00 Available', label: '4:00 Available' },
@@ -35,6 +36,27 @@ const Dropdown = () => {
                     // defaultValue={selectedOption}
                     // onChange={setSelectedOption}
                     options={options}
+                    placeholder='Please Select'
+                    styles={{
+                        control: (baseStyles) => ({
+                          ...baseStyles,
+                          height:'50px',
+                          backgroundColor:'#F9F9F9',
+                          borderRadius:'5px',
+                          border:'#DDDDDD,1px,solid',
+
+                        }),
+                        indicatorSeparator: (baseStyles) => ({
+                            ...baseStyles,
+                            display:'none'
+                        }),
+                        placeholder: (baseStyles) => ({
+                            ...baseStyles,
+                            marginLeft:'14px',
+                            fontSize:'14px',
+                            color:'#737373'
+                        })
+                      }}
                 />
                 </div>
                 <div>
@@ -43,7 +65,26 @@ const Dropdown = () => {
                     // defaultValue={selectedOption}
                     // onChange={setSelectedOption}
                     options={options}
-                    className=""
+                    placeholder='Please Select'
+                    styles={{
+                        control: (baseStyles) => ({
+                          ...baseStyles,
+                          height:'50px',
+                          backgroundColor:'#F9F9F9',
+                          borderRadius:'5px',
+                          border:'#DDDDDD,1px,solid',
+                        }),
+                        indicatorSeparator: (baseStyles) => ({
+                            ...baseStyles,
+                            display:'none'
+                        }),
+                        placeholder: (baseStyles) => ({
+                            ...baseStyles,
+                            marginLeft:'14px',
+                            fontSize:'14px',
+                            color:'#737373'
+                        })
+                      }}
                 />
                 </div>
             </div>
