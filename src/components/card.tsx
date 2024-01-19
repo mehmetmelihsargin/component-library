@@ -8,7 +8,7 @@ const Card = () => {
     return (
         <div className='flex sm:flex-row flex-col p-6 gap-6'>
             <img src='../assets/img.png' className='w-full object-cover sm:max-w-[278px]' alt="" />
-            <div className='flex flex-col'>
+            <div className='flex flex-col w-full'>
                 <div className='h-8 font-medium text-2xl leading-8 tracking-widest text-[#252B42]'>Floating Phone</div>
                 <div className='flex mt-4 h-6'>
                     <p className='text-sm font-semibold leading-6 tracking-wide text-[#737373]'>By</p>
@@ -45,12 +45,12 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col sm:gap-[68px] sm:justify-between'>
+            <div className='flex flex-col  sm:justify-between sm:items-end w-full'>
                 <div className='hidden sm:flex flex-col items-end'>
                     <div className='text-lg font-bold leading-6 tracking-wide rounded-md flex items-center justify-center h-11 w-[81px] text-white bg-[#40BB15]'>$13.33</div>
                     <p className='text-sm font-semibold leading-6 tracking-wide text-[#737373]'>Starting cost</p>
                 </div>
-                <div className='flex justify-center rounded-md h-10 items-center bg-[#23A6F0]'>
+                <div className='flex justify-center rounded-md h-10 sm:w-32 items-center  bg-[#23A6F0]'>
                     <p className='text-base font-semibold leading-6 text-white sm:hidden'>Select option</p>
                     <p className='text-sm font-semibold leading-6 text-white hidden sm:block'>View profile</p>
                 </div>

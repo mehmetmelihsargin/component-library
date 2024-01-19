@@ -24,7 +24,6 @@ const illustrated = () => {
             <p className='text-white text-sm font-semibold leading-6 tracking-wider hidden sm:block'>New</p>
         </div>
         </div>
-        
       </div>
     </div>
   )

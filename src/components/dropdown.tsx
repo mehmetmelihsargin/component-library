@@ -1,12 +1,21 @@
 import React, { useState } from 'react'
 import Select from 'react-select';
-import Placeholder from 'react-select/dist/declarations/src/components/Placeholder';
+// import Placeholder from 'react-select/dist/declarations/src/components/Placeholder';
 // const [selectedOption, setSelectedOption] = useState<any>();
 const options = [
     { value: '4:00 Available', label: '4:00 Available' },
     { value: 'Please Select', label: 'Please Select' },
     { value: 'vanilla', label: 'Vanilla' },
   ];
+  const [inpValue, setinpValue] = useState({});
+  
+  const handleSelectChange = ({}) => {
+    setinpValue({
+      ...inpValue,
+      selectedOption,
+    });
+console.log(inpValue)
+}
 const Dropdown = () => {
     return (
         <div className='flex flex-col gap-10 p-10'>
@@ -18,6 +27,7 @@ const Dropdown = () => {
                         <input type=""
                             className='ml-[20px] bg-[#F9F9F9] text-[#737373]'
                             placeholder="Full Name *"
+                            onChange={handleSelectChange}
                         />
                     </div>
                 </div>
@@ -33,8 +43,8 @@ const Dropdown = () => {
                 <div className=''>
             <p className='text-base font-semibold leading-6 tracking-wide text-left mb-3'>Departement *</p>
             <Select
-                    // defaultValue={selectedOption}
-                    // onChange={setSelectedOption}
+                    defaultValue={selectedOption}
+                    onChange={handleSelectChange}
                     options={options}
                     placeholder='Please Select'
                     styles={{
@@ -63,7 +73,7 @@ const Dropdown = () => {
                <p className='text-base font-semibold leading-6 tracking-wide text-left mb-3'>Time *</p>
                 <Select
                     // defaultValue={selectedOption}
-                    // onChange={setSelectedOption}
+                    // onChange={}
                     options={options}
                     placeholder='Please Select'
                     styles={{
