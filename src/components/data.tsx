@@ -1,0 +1,58 @@
+import { components } from "react-select";
+
+export const Data = [
+    {
+        image : "../assets/samsung-s23.avif" ,
+        title : 'Samsung Galaxy S23 Ultra',
+        description :'Düşük ışık. Kamera. Motor',
+        rating :'',
+        amount : '57.999₺',
+        sales : '32 sales',
+        size : '',
+    },
+    {
+        image: "../assets/iphone15.jpeg" ,
+        title : 'iPhone 15 Pro 128 GB',
+        description :'A17 Pro. Ezber bozan bir çip. Çığır açan bir performans.',
+        rating :'',
+        amount : '67.399₺',
+        sales : '47 sales',
+        size : '',
+    },
+    {
+        image:  "../assets/xiaomi-13-pro.avif",
+        title : 'Xiaomi 13T Pro 512 GB',
+        description :'Seninle bir başyapıt',
+        rating :'',
+        amount : '15.739₺',
+        sales : '78 sales',
+        size : '',
+    },
+    {
+        image:  "../assets/oppo.avif" ,
+        title : 'Oppo Reno 5 Lite 128 GB',
+        description :'48MP Yapay Zeka Dörtlü Kamera Hayatı Kendi Koşullarınıza Göre Yakalayın',
+        rating :'',
+        amount : '15.750₺',
+        sales : '21 sales',
+        size : '',
+    },
+    {
+        image:  "../assets/iphone-11.png" ,
+        title : 'iPhone 11 64 Gb',
+        description :'Yeni çift kamera sistemi. Tüm gün süren pil ömrü. Bir akıllı telefondaki en dayanıklı cam. ',
+        rating :'',
+        amount : '23.999₺',
+        sales : '133 sales',
+        size : '',
+    },
+    {
+        image:  "../assets/vivo.jpeg" ,
+        title : 'Vivo Y35 8gb',
+        description :'Vivo her zaman kullanıcılarının ihtiyaçlarını öncelik olarak belirler.',
+        rating :'',
+        amount : '7.999₺',
+        sales : '12 sales',
+        size : '',
+    },
+]
