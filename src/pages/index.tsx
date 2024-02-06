@@ -4,7 +4,7 @@ import Illustrated from '@/components/illustrated'
 import Button from '@/components/button'
 import Okan, { toplama } from '@/components/okan'
 import Buttonn from '@/components/buttonn'
-import Product from '@/components/product'
+import Product from '@/components/productComponent'
 
 export default function Home() {
   console.log(toplama(5,3),'okann') 
@@ -19,7 +19,7 @@ export default function Home() {
       {/* <Button width='w-32' height='h-10' backgroundColor='bg-red' textColor='white'/>
       <Buttonn placeholder='okan' width='32' backgroundColor='bg-black'/> */}
       <hr />
-      <Product />
+  
       
       
     </main>
