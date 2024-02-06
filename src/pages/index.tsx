@@ -5,23 +5,22 @@ import Button from '@/components/button'
 import Okan, { toplama } from '@/components/okan'
 import Buttonn from '@/components/buttonn'
 import Product from '@/components/productComponent'
+import { Data } from '@/components/data'
 
 export default function Home() {
-  console.log(toplama(5,3),'okann') 
   return (
     <main>
-      <Card />
+      {Data?.map((item: any, index: number) => <Card key={index} item={item} />)}
       <hr />
-      <Dropdown />
+      {/* <Dropdown />
       <hr />
-      <Illustrated/>
+      <Illustrated /> */}
       <hr />
       {/* <Button width='w-32' height='h-10' backgroundColor='bg-red' textColor='white'/>
       <Buttonn placeholder='okan' width='32' backgroundColor='bg-black'/> */}
       <hr />
-  
-      
-      
+
+
     </main>
   )
 }
