@@ -12,12 +12,12 @@ export default function Home() {
     <main>
       {Data?.map((item: any, index: number) => <Card key={index} item={item} />)}
       <hr />
-      {/* <Dropdown />
+      <Dropdown />
       <hr />
-      <Illustrated /> */}
+      <Illustrated />
       <hr />
-      {/* <Button width='w-32' height='h-10' backgroundColor='bg-red' textColor='white'/>
-      <Buttonn placeholder='okan' width='32' backgroundColor='bg-black'/> */}
+      <Button width='w-32' height='h-10' backgroundColor='bg-red' textColor='white'/>
+      <Buttonn placeholder='okan' width='32' backgroundColor='bg-black'/>
       <hr />
 
 
