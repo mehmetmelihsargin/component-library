@@ -67,6 +67,7 @@ const Card = ({ item }: CardProps) => {
                     </div>
                     <div className='flex justify-center rounded-md h-10 sm:w-32 items-center  bg-[#23A6F0]'>
                         <p className='text-base font-semibold leading-6 text-white sm:hidden'>Select option</p>
+                       {/*ÖNEMLİ */} 
                         <Link href={{ pathname: `product/${item.id}` }} className='text-sm font-semibold leading-6 text-white hidden sm:block'>View profile</Link>
                     </div>
                     <div className='flex items-center justify-center mt-6 w-full sm:hidden'>
