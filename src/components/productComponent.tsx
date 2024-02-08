@@ -4,6 +4,7 @@ import Color from '../../public/assets/Color'
 import Count from '../../public/assets/Count'
 import Wishlist from '../../public/assets/Wishlist'
 import Social from '../../public/assets/Social'
+import Link from 'next/link'
 
 const ProductComponent = ({data}: any) => {
     return (
