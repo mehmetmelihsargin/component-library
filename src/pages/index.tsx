@@ -6,6 +6,8 @@ import Okan, { toplama } from '@/components/okan'
 import Buttonn from '@/components/buttonn'
 import Product from '@/components/productComponent'
 import { Data } from '@/components/data'
+import Bag from './product/[bag]'
+
 
 export default function Home() {
   return (
@@ -16,10 +18,11 @@ export default function Home() {
       <hr />
       <Illustrated />
       <hr />
-      <Button width='w-32' height='h-10' backgroundColor='bg-red' textColor='white'/>
-      <Buttonn placeholder='okan' width='32' backgroundColor='bg-black'/>
+      {/* <Button width='w-32' height='h-10' backgroundColor='bg-red' textColor='white'/>
+      <Buttonn placeholder='okan' width='32' backgroundColor='bg-black'/> */}
       <hr />
-
+      <Bag />
+      
 
     </main>
   )
